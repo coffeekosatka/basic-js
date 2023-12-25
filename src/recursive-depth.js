@@ -24,7 +24,7 @@ class DepthCalculator {
     for (let i = 0; i < arr.length; i++) {
       depth += i;
     }
-    const result = Array.from({ length: depth * 2 }, (_, index) => String.fromCharCode(index + 65)).join(""); //не уверена, удалить
+    const result = Array.from({ length: depth * 2 }, (_, index) => String.fromCharCode(index + 1)).join(""); //не уверена, удалить
 
     for (const element of arr) {
       if (Array.isArray(element)) {
