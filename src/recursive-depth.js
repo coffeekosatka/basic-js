@@ -21,7 +21,7 @@ class DepthCalculator {
     let depth = 1;
     let maxDepth = 1;
 
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < arr.length; i++) {
       depth += i;
     }
     const result = Array.from({ length: depth * 2 }, (_, index) => String.fromCharCode(index + 65)).join(""); //не уверена, удалить
